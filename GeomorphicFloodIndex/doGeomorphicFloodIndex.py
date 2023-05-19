@@ -478,9 +478,9 @@ class GeomorphicFloodIndexDialog(QDialog, Ui_GeomorphicFloodIndex):
             debug=0
             calibration=0
 
-            #if self.checkBoxDebug. isChecked():
-            #    debug=1
-            if self.checkBoxCalibration. isChecked():
+            if self.checkBoxDebug.isChecked():
+                debug=1
+            if self.checkBoxCalibration.isChecked():
                 calibration=1
             #######################################################
 
