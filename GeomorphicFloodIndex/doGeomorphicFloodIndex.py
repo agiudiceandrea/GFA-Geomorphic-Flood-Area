@@ -395,11 +395,11 @@ class GeomorphicFloodIndexDialog(QDialog, Ui_GeomorphicFloodIndex):
         rlayer = QgsRasterLayer(outFile, baseName)
         if not rlayer.isValid():
             self.textEdit.append("Layer failed to load!")
-        if QGis.QGIS_VERSION_INT < 10900:
+        if Qgis.QGIS_VERSION_INT < 10900:
             rlayer.setDrawingStyle(QgsRasterLayer.SingleBandPseudoColor)
             rlayer.setColorShadingAlgorithm(QgsRasterLayer.FreakOutShader)
 
-        QgsMapLayerRegistry.instance().addMapLayer(rlayer)
+        QgsProject.instance().addMapLayer(rlayer)
 
 
     def writeOutputGeoTiff(self,arrayData, transform, prj,rows, cols, outFile):
@@ -478,8 +478,8 @@ class GeomorphicFloodIndexDialog(QDialog, Ui_GeomorphicFloodIndex):
             debug=0
             calibration=0
 
-            if self.checkBoxDebug. isChecked():
-                debug=1
+            #if self.checkBoxDebug. isChecked():
+            #    debug=1
             if self.checkBoxCalibration. isChecked():
                 calibration=1
             #######################################################
