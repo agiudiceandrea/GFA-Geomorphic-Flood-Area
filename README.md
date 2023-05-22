@@ -1,4 +1,4 @@
-**GFA v.3.0**
+**GFA v. 3.0.1**
 ----------
 
 ### Geomorphic Flood Area
@@ -57,12 +57,12 @@ This project is completely licensed [GPL v2+](https://github.com/HydroLAB-UNIBAS
 ### Metadata
 | Metadata Title | Description |
 |----------------|-------------|
-|  Current Code version              |    v. 1.0         |
-|   Permanent link to code / repository used of this code version             |       https://github.com/HydroLAB-UNIBAS/GFA-Geomorphic-Flood-Area       |
-|       Software Code Language used          |        Python (v. 2.7)       |
-|    Compilation requirements, Operating environments & dependencies             |    QGIS 2 or higher         |
-|   Computing platform / Operating System             |   Linux, OS X, Microsoft Windows          |
-|     License           |      GNU GPL v.2       |
+|Current Code version|v. 1.0|
+|Permanent link to code / repository used of this code version|https://github.com/agiudiceandrea/GFA-Geomorphic-Flood-Area|
+|Software Code Language used|Python (v. 3.9)|
+|Compilation requirements, Operating environments & dependencies|QGIS 3.16 or higher|
+|Computing platform / Operating System|Linux, OS X, Microsoft Windows|
+|License|GNU GPL v. 2|
 
 ## GFA Installation Instruction
 **GFA - tool** can be installed in [QGIS](https://qgis.org) using the Plugin Manager (see [here](http://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins.html#managing-plugins)). The plugin was tested on the 2.14 ltr release of QGIS. It uses the python library of QGIS core. 
